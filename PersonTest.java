@@ -10,4 +10,12 @@ public class PersonTest {
 		String expected = "DRY";
 		assertEquals(expected, output);
 	}
+	@Test
+	public void testsNameWithTwoSpaces(){
+		Person p = new Person();
+		String input = "John  Smith";
+		String output = p.getInitials(input);
+		String expected = "JS";
+		assertEquals(expected, output);
+	}
 }
